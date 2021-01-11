@@ -13,12 +13,15 @@ sudo chmod +x /usr/local/bin/subsrenamer
 ```
 this will make the script executable and can be run anywhere using `subsrenamer`
 ## HOW TO USE
-the script assumes videos and subtitles are in the same current working directory
+the script assumes that videos and subtitles are in the same current working directory
+
 `-v` : give the first common part of all video names that is from the beginning till where the episode number is mentioned.
+
 e.g: if your video is `[AkihitoSubs] Hyouka - 02 [BD 1920x1080 x265 10Bit AC3].mkv`
 	do `-v "[AkihitoSubs] Hyouka - "`
 
 `-s` : same thing , give first name part of the subtitles until the Ep number is mentioned.
+
 e.g: if sub files names `Demon Slayer Kimetsu no Yaiba.S01E19.CC.ja.srt`
 	do `-s "Demon Slayer Kimetsu no Yaiba.S01E"`
 
@@ -36,6 +39,7 @@ Demon Slayer Kimetsu no Yaiba.S01E02.CC.ja.srt  [Hakata Ramen] Kimetsu no Yaiba 
 Demon Slayer Kimetsu no Yaiba.S01E03.CC.ja.srt  [Hakata Ramen] Kimetsu no Yaiba (Demon Slayer) - 03 [1080p][HEVC].mkv
 ```
 - running :
+
 `subsrenamer -v "[Hakata Ramen] Kimetsu no Yaiba (Demon Slayer) - " -s "Demon Slayer Kimetsu no Yaiba.S01E"`
 
 - results in: 
@@ -50,7 +54,7 @@ $ ls
 - sometimes the videos differ in the final part , the script doesn't check for that yet.
 
 ### ToDo / wishlist features :
-- [] better handling of user input/ error reporting.
-- [] rename each sub based on its corresponding episode (aka match first AND last part)
-- [] set custom directory where the subs reside
-- [] make possible to generate an undo script placed in working directory to undo the renaming 
+- [ ] better handling of user input/ error reporting.
+- [ ] rename each sub based on its corresponding episode (aka match first AND last part)
+- [ ] set custom directory where the subs reside
+- [ ] make possible to generate an undo script placed in working directory to undo the renaming 
