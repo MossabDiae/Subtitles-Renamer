@@ -1,5 +1,5 @@
 # Subtitles-Renamer
-Renames Subtitles to match the videos naming pattern for auto loading.
+Renames Subtitles to match the videos naming pattern so video players can auto-load them.
 
 ## INSTALL
 Just put the script in the same dicrectory as Videos and Subtitles and use
